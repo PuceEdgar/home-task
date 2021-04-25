@@ -28,7 +28,7 @@ namespace BillingAPI.Logic
             }
         }
 
-        private static async Task<(bool, string)> Process(HttpClient client, IncommingOrderDto createOrderDto)
+        public static async Task<(bool, string)> Process(HttpClient client, IncommingOrderDto createOrderDto)
         {
             try
             {

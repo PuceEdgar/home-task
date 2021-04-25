@@ -119,7 +119,7 @@ namespace BillingAPI.Controllers
                     BadRequest(result.Message);
                 }
 
-                var uri = $"{Request.Scheme}://{Request.Host}{Request.Path}/order/{result.SingleOrder.OrderNumber}";
+                var uri = $"https://localhost:44327/api/billing/order/{result.SingleOrder.OrderNumber}";
                 return Created(uri, DtoMapper.MapResultDtoToCreatedOrderDto(result));
             }
             catch (Exception ex)

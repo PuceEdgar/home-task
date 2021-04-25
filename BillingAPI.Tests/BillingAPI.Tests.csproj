@@ -10,6 +10,7 @@
     <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
     <PackageReference Include="Moq" Version="4.16.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
     <PackageReference Include="xunit" Version="2.4.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
     <PackageReference Include="coverlet.collector" Version="1.0.1" />
@@ -17,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BillingAPI\BillingAPI.csproj" />
+    <ProjectReference Include="..\PaymentGatewayAPI\PaymentGatewayAPI.csproj" />
   </ItemGroup>
 
 </Project>
